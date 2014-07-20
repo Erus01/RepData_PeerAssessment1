@@ -79,4 +79,7 @@ avg <- aggregate(steps ~ interval + day.type, data = data, FUN= "mean" )
 
 library(lattice)
 xyplot(steps ~ interval|day.type, data = avg, type = 'l',layout = c(1,2))
+
+   file.rename(from="PA1_template.Rmd", 
+               to="PA1_template.md")
 ```
